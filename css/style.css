@@ -1,0 +1,76 @@
+.container {
+  width: 100%;
+  height: 500px;
+  margin: 0 auto;
+  text-align: center;
+  position: relative;
+  margin-top: 50px;
+  color: #2a2a2a;
+}
+.board {
+  height: 400px;
+  width: 400px;
+  margin: 0 auto;
+  position: relative;
+}
+.color-1 {
+  border-top: 100px solid yellow;
+  border-left: 100px solid transparent;
+  border-right: 100px solid transparent;
+  border-radius: 50%;
+  display: block;
+  position: absolute;
+  top: 98px;
+  left: 110px;
+}
+.color-2 {
+  border-top: 100px solid transparent;
+  border-bottom: 100px solid transparent;
+  border-left: 100px solid red;
+  border-radius: 50%;
+  display: block;
+  position: absolute;
+  top: 100px;
+  left: 107px;
+}
+.color-3 {
+  border-top: 100px solid transparent;
+  border-right: 100px solid blue;
+  border-bottom: 100px solid transparent;
+  border-radius: 50%;
+  display: block;
+  position: absolute;
+  right: 88px;
+  top: 100px;
+}
+.color-4 {
+  border-bottom: 100px solid green;
+  border-left: 100px solid transparent;
+  border-right: 100px solid transparent;
+  border-radius: 50%;
+  display: block;
+  position: absolute;
+  left: 110px;
+  bottom: 98px;
+}
+.piece{
+  width: 0;
+  height: 0;
+  text-align: center;
+  cursor: pointer;
+  margin: 0 auto;
+  position: absolute;
+}
+.button{
+  text-decoration: none;
+}
+
+.flash {
+  animation-name: flash;
+  animation-duration: 0.2s;
+}
+@keyframes flash {
+  0%   {transform: scale(1);}
+  50%  {transform: scale(1.2);}
+  100% {transform: scale(1);}
+}
