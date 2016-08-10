@@ -18,7 +18,7 @@ View.prototype.sequence = function () {
   for (var i = 0; i < this.model.pattern.length; i++) {
     var interval = 500 * i
     setTimeout(this.flash(this.model.pattern[i]), interval)
-    setTimeout(this.deflash(this.model.pattern[i]), interval + 200)
+    setTimeout(this.deflash(this.model.pattern[i]), interval + 300)
   }
 }
 
@@ -36,5 +36,7 @@ View.prototype.deflash = function (number) {
 
 View.prototype.render = function(){
   this.el.innerHTML = this.template();
-  this.sequence();
+  setTimeout(function () {
+    this.sequence();
+  }.bind(this), 500)
 }
