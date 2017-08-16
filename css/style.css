@@ -7,6 +7,16 @@
   margin-top: 50px;
   color: #2a2a2a;
 }
+
+a,
+a:active,
+a:visited,
+a:hover {
+  display: block;
+  color: #2a2a2a;
+  margin-top: 20px;
+}
+
 .board {
   height: 210px;
   width: 210px;
@@ -14,42 +24,49 @@
   position: relative;
   display: block;
 }
+
 .color-1 {
   border-radius: 100px 0 0 0;
   background-color: yellow;
 }
+
 .color-2 {
   border-radius: 0 100px 0 0;
   background-color: red;
 }
+
 .color-3 {
   border-radius: 0 0 0 100px;
   background-color: blue;
 }
+
 .color-4 {
   border-radius: 0 0 100px 0;
   background-color: green;
 }
-.piece{
+
+.piece {
   text-align: center;
   cursor: pointer;
   height: 100px;
   width: 100px;
   display: inline-block;
 }
-.piece:nth-child(even){
+
+.piece:nth-child(even) {
   margin-left: 5px;
 }
 
-.button{
+.button {
   text-decoration: none;
-  padding-top: 5px;
+  cursor: pointer;
 }
 
 .flash {
   animation-name: flash;
   animation-duration: 0.2s;
 }
+
 @keyframes flash {
   0%   {transform: scale(1);}
   50%  {transform: scale(1.2);}
